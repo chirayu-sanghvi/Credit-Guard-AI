@@ -38,4 +38,8 @@ further research and technological advancements in credit risk assessment.
  
 5. Strengthen Industry competitiveness: Lending institutions that adopt more effective 
 credit default prediction models gain a competitive edge in the market. This can lead 
-to improve market share, and sustained growth. 
+to improve market share, and sustained growth.
+
+Data Source: 
+https://www.kaggle.com/datasets/hotsonhonet/amex-
+competition/download?datasetVersionNumber=1
