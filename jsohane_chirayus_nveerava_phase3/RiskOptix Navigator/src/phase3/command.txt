@@ -1,0 +1,5 @@
+# Command to run this web application
+
+1. Activate the virtual environment: `.venv\Scripts\activate`
+2. Navigate to the phase3 directory: `cd src\phase3`
+3. Run the application in the phase3 folder: `flask --app app\app.py run` (for windows OS)

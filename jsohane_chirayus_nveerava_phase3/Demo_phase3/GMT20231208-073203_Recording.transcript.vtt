@@ -1,0 +1,138 @@
+WEBVTT
+
+1
+00:00:07.290 --> 00:00:11.749
+Chirayu Sanghvi: Hi, this is Navi. I'm going to start the presentation for phase 3 of the project
+
+2
+00:00:11.770 --> 00:00:17.950
+Chirayu Sanghvi: so we created a standard standalone application named risk optics, navigator
+
+3
+00:00:18.160 --> 00:00:38.079
+Chirayu Sanghvi: so if you take a look at the Route Directory, so we can see that we have 2 folders called Dot V. And V and Src. The Src folder contains this the code for all the 3 phases and and the code for the standalone plastic application that we built is inside the the phase, 3 folder
+
+4
+00:00:38.380 --> 00:00:52.939
+Chirayu Sanghvi: and the dot v. And V folder is a standalone virtual environment that contains all the required dependencies that you need to run this application so essentially, this allows, this project to be run on any operating system with just a
+
+5
+00:00:53.070 --> 00:00:59.249
+Chirayu Sanghvi: commands and the commands that are needed to run this application are all
+
+6
+00:00:59.760 --> 00:01:05.329
+Chirayu Sanghvi: mentioned in this in the phase 3 folder called command dot txt.
+
+7
+00:01:05.700 --> 00:01:06.850
+Chirayu Sanghvi: So
+
+8
+00:01:07.460 --> 00:01:14.560
+Chirayu Sanghvi: if to run the application. Now, so let's open the root folder in Vs code, and if you open up a terminal
+
+9
+00:01:14.830 --> 00:01:20.599
+Chirayu Sanghvi: instead of opening, now, be careful. Instead of opening a partial command. You have to run a command from command.
+
+10
+00:01:20.690 --> 00:01:27.590
+Chirayu Sanghvi: And then so the first command that we need to run is this, which starts the virtual environment.
+
+11
+00:01:29.530 --> 00:01:33.510
+Chirayu Sanghvi: As you can see, the environment is now active. and the second.
+
+12
+00:01:34.080 --> 00:01:40.340
+Chirayu Sanghvi: now we navigate to our phase 3 folder using this command, the second command.
+
+13
+00:01:41.490 --> 00:01:46.720
+Chirayu Sanghvi: and then we start at that last application, using this comment, the third comment.
+
+14
+00:01:50.800 --> 00:02:01.979
+Chirayu Sanghvi: So in a few seconds the plastic application will start running. As you can see now the application is active, and so if you go into your browser and go to local host at Port 5,000
+
+15
+00:02:02.830 --> 00:02:11.609
+Chirayu Sanghvi:  you can see that the app is up and running, so my partner Jen, will now explain how to use the application.
+
+16
+00:02:16.690 --> 00:02:20.770
+Chirayu Sanghvi: Hi! I'm Jen. So here what you see is the home page of application.
+
+17
+00:02:20.860 --> 00:02:33.559
+Chirayu Sanghvi: so the person is prompted to check it for a page, card, or loan. So when I click to the word page button, a form is ruled where I can enter my details. So enter my details, then sign in a virtual right, one
+
+18
+00:02:33.680 --> 00:02:46.670
+Chirayu Sanghvi: negative income. I'm giving this number another reason why this is 500, then 2 different members. I can give 2. This migrant worker. Field says that if a worker has migrated from some other country, I will say no, for now
+
+19
+00:02:46.840 --> 00:02:49.189
+Chirayu Sanghvi: my area document is this much
+
+20
+00:02:49.280 --> 00:02:59.859
+Chirayu Sanghvi: grade limit? I'm entering this much. Then paid limit percent is used like I've used 20% of my grade limit. So this right 20 here my grade score is 87
+
+21
+00:02:59.890 --> 00:03:10.269
+Chirayu Sanghvi: other than that. These we have also implemented the content validations. If we enter a value greater than 900, then we can't submit a sum, and it will say error that you have to enter between 0 and 900.
+
+22
+00:03:10.470 --> 00:03:18.759
+Chirayu Sanghvi: I don't have any pill defaults. My defaults in last 6 months is none, so I've entered no hair entered my gender negotiators. Home's house, no
+
+23
+00:03:18.950 --> 00:03:25.120
+Chirayu Sanghvi: occupation time I can give among these, so I'll just keep seeing stuff, for now then I click on the break button.
+
+24
+00:03:25.820 --> 00:03:33.150
+Chirayu Sanghvi: So yes, I'm available for this now. My team mate thrives on. We will explain the interpretations of these results to graphs.
+
+25
+00:03:37.550 --> 00:04:00.640
+Chirayu Sanghvi: Hi, this is Chirai. And thank you, Jen, so, as you can see, our model predicted that James is eligible for the credit card, and why our model predicted this result. Let's understand this, the real time feedback, which are model provided. So before moving on to the to the interpretation, I just want to make clear that 0 means approved and one means rejected for a credit card default.
+
+26
+00:04:01.230 --> 00:04:18.130
+Chirayu Sanghvi: and on top of that these are the the 3 factors or 3 parameters which are highly correlated with the with the result of the models and affects a lot the for the approval and rejection, rejection of an application. So the first field is credit score, as you can see from the plot
+
+27
+00:04:18.160 --> 00:04:40.639
+Chirayu Sanghvi: that if any, if and if a person is having a credit score less than 500, or around 450 most likely the model will be project that, the application will get rejected and default default. Credit card is is equal to one. But as Jan. This Gen. This Co. Credit score is 856, which is far beyond the threshold, and that's why it it most likely that the model predicted 0, and
+
+28
+00:04:40.930 --> 00:04:54.999
+Chirayu Sanghvi: it comes it comes in favor of Jant. The next parameter is default in last 6 months. This field means that. Whether Jant was not able to pay his credit card bill or any loan in last 6 months. The 0 means
+
+29
+00:04:55.000 --> 00:05:13.310
+Chirayu Sanghvi: no, and one means yes, as Jen entered 0. It means that Jen has no pending bill from the last 6 months, and our model predictor, our model is tuned in this way that if it is 0 then most likely to predict that the credit card default is 0, which means approved. So this also comes in favor of Jen.
+
+30
+00:05:13.340 --> 00:05:20.760
+Chirayu Sanghvi: and the last field is a credit card limit which is used by Gen. In last month or last bill payment from since last bill payment.
+
+31
+00:05:20.870 --> 00:05:37.359
+Chirayu Sanghvi: So in the in the plot, you can see that if the if a person is using more than 65% of credit limit, then most likely that the credit card bill the credit card default value would be one which means it will get rejected. But Jen is on the safe side, and he's only using 20% of the limit.
+
+32
+00:05:37.360 --> 00:05:54.059
+Chirayu Sanghvi: So that's why model is most likely going to predict 0 means approved as per this field as well, and also the 3 fields which are highly correlated with the result of the model, are in favor of Jan the result of our model gives. Jane is eligible for the card and it Ca, the result comes positive for Jane.
+
+33
+00:05:54.080 --> 00:06:21.260
+Chirayu Sanghvi:  So in this way, user can interpret and make their understanding on the decision of their application, like whether it is rejected or approved. In case it is rejected user can in improve all these fields and then can improve and can can get result in favor of them. Next time, whenever they'll apply for credit card alone application using using our navigated application. That's all. That's that's all the demo. And thank you for your time.
+
+34
+00:06:21.420 --> 00:06:23.210
+Chirayu Sanghvi: And thank you very much. Everyone.
+

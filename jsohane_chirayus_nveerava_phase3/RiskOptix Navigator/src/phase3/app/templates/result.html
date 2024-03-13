@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external css for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <title>Result Page</title>
+</head>
+<body>
+    <!-- Main container for the result content -->
+    <div class="container">
+        <h1>Hi, {{ name }}</h1>
+        {% if prediction == 1 %}
+            <p>    <span style=" font-size: 35px;">Alas !!!!</span><br><br>
+                <span style="font-weight: bold; font-size: 50px;">You are not eligible for the credit card.</span>
+            </p>
+        {% else %}
+        <p>    <span style=" font-size: 35px;">Horrah !!!!</span><br><br>
+            <span style="font-weight: bold; font-size: 50px;">You are eligible for the credit card.</span>
+        </p>
+        {% endif %}
+
+
+
+
+
+        <!-- Container for navigation buttons -->
+        <div class="button-container">
+            <!-- Button to go back to Index page-->
+            <a class="button button-back-to-index" href="{{ url_for('home') }}">Go back to Index Page</a>
+            <!-- Button to go back to predict page-->
+            <a class="button button-back-to-predict" href="{{ url_for('predict') }}">Go back to Predict Page</a>
+        </div>
+    </div>
+
+<!-- Container for images with names -->
+<div class="image-container">
+    <h1> Visualizations for Customer </h1>
+    <p><span style=" font-size: 30px; color: red;">Reason for approval / rejection for : {{name}}</span></p>
+    <p><span style=" font-size: 20px;">In the Visualizations, 0: "Approved", 1: "Rejected"</span></p>
+    <!-- Image for Credit Score -->
+    <div class="image-with-text">
+        <p><span style=" font-size: 20px;"><b> Your Credit Score: {{ credit_score }} </b></span></p>
+        <p><span style=" font-size: 25px; color: brown;">This is the general trend for approval/rejection for credit score</span></p>
+        <img src="{{ url_for('static', filename='CreditScore.png') }}" alt="Credit Score Image">
+        <p><b>============================================================================================</b><p>
+    </div>
+
+    <!-- Image for Default in Last 6 Months -->
+    <div class="image-with-text">
+        <p><span style=" font-size: 20px;"><b> Did you default in last 6 months:{{ default_in_last_6months }} </b></span></p>
+        <p><span style=" font-size: 25px; color: brown;">This is the general trend for approval/rejection for default in last 6 months</span></p>
+        <img src="{{ url_for('static', filename='defaultinlast6months.png') }}" alt="Default in Last 6 Months Image">
+        <p><b>============================================================================================</b><p>
+    </div>
+
+    <!-- Image for Credit Limit Used -->
+    <div class="image-with-text">
+        <p><span style=" font-size: 20px;"><b> Your Credit Limit used (in %): {{ credit_limit }} </b><span></p>
+        <p><span style=" font-size: 25px; color: brown;">This is the general trend for approval/rejection for credit limit</span></p>
+        <img src="{{ url_for('static', filename='creditlimitused.png') }}" alt="Credit Limit Used Image">
+    </div>
+</div>
+
+
+</body>
+</html>

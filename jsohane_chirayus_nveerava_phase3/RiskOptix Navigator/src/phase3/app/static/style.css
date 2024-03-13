@@ -1,0 +1,98 @@
+/*Resetting default margins and padding for various HTML elements*/
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../static/predict_background.jpg') center/cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: fadeIn 2s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 80vh; 
+    overflow-y: auto; 
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333;
+    text-align: left; 
+    display: block; 
+}
+
+input {
+    width:200;
+    box-sizing: border-box; 
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 14px; /* Increase padding for a larger button */
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover for a subtle effect */
+}
+
+.button-back-to-index {
+    position: fixed; /* fixed position on the top-left corner*/
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color*/
+}
+
+/* Hover effect added */
+.button-back-to-index:hover {
+    background-color: #0056b3;
+}
+
+/* Animation for fade-in effect*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

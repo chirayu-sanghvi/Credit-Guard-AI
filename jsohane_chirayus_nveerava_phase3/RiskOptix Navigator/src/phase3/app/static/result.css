@@ -1,0 +1,106 @@
+/*Styling the body element*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../static/result_image.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #007BFF;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* Styling go back to Index Page button */
+.button-back-to-index {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.button-back-to-predict {
+    background-color: #007BFF;
+    color: #fff;
+}
+/* Hover effect for buttons */
+.button:hover {
+    background-color: #45a049;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    overflow-x: auto; 
+    max-height: 400px; 
+    max-width: 800px;
+    padding: 20px; 
+    border-radius: 8px; 
+    background-color: hsl(0, 0%, 100%); 
+    margin: 50px auto;
+}
+
+.image-with-text {
+    width: 100%; 
+    text-align: center;
+}
+
+.image-with-text img {
+    width: 50%; 
+    border-radius: 8px; 
+    margin-bottom: 10px;
+}
+
+.image-with-text p {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* Animation for fade in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
