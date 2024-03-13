@@ -41,5 +41,4 @@ credit default prediction models gain a competitive edge in the market. This can
 to improve market share, and sustained growth.
 
 Data Source: 
-https://www.kaggle.com/datasets/hotsonhonet/amex-
-competition/download?datasetVersionNumber=1
+https://www.kaggle.com/datasets/hotsonhonet/amex-competition/download?datasetVersionNumber=1
