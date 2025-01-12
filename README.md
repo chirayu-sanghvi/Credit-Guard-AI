@@ -1,4 +1,4 @@
-1.  Problem Statement 
+1. Problem Statement 
  
 The challenge of accurately predicting credit card defaults is a fundamental concern in 
 consumer lending. The project aims to address this issue, by developing machine, 
